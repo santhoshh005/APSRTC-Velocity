@@ -1,0 +1,325 @@
+import { Language } from '../types';
+
+export const translations = {
+  en: {
+    // Header
+    brandName: 'Andhra Pradesh State Road Transport Corporation',
+    brandSub: 'Government of Andhra Pradesh Undertaking',
+    shortBrand: 'APSRTC',
+    tagline: 'Reliable • Safe • Affordable',
+    hotline24x7: '24/7 Helpline',
+    home: 'Home',
+    trackBus: 'Live Bus Tracker',
+    ticketStatus: 'Ticket Status',
+    cancelTicket: 'Cancel Ticket',
+    logistics: 'Logistics / Cargo',
+    grievance: 'Grievance / Feedback',
+    agentLogin: 'Agent Login',
+    myBookings: 'My Bookings',
+
+    // Hero Search
+    heroTitle: 'Travel Across Andhra Pradesh with Comfort & Trust',
+    heroSubtitle: 'Book online bus tickets directly with zero hidden booking charges.',
+    fromCity: 'Leaving From',
+    toCity: 'Going To',
+    selectOrigin: 'Enter Origin City / Bus Station',
+    selectDestination: 'Enter Destination City / Bus Station',
+    departDate: 'Departure Date',
+    returnDate: 'Return Date (Optional)',
+    roundTrip: 'Round Trip (Save 10%)',
+    today: 'Today',
+    tomorrow: 'Tomorrow',
+    thisWeekend: 'Weekend',
+    checkAvailability: 'Search Buses',
+    swapRoute: 'Swap Origin & Destination',
+    popularHubs: 'Major City Hubs',
+    localStops: 'Local Pickup Points',
+
+    // Popular Corridors
+    popularRoutesTitle: 'Popular State & Interstate Corridors',
+    popularRoutesSubtitle: 'Daily high-frequency luxury and express services with real-time tracking',
+    startingFrom: 'Starting from',
+    busesPerDay: 'Buses Daily',
+    duration: 'Duration',
+    bookNow: 'Book Now',
+
+    // Search Results
+    modifySearch: 'Modify Search',
+    foundBuses: 'services available',
+    filterBy: 'Filter Services',
+    resetFilters: 'Reset All',
+    busCategory: 'Bus Category',
+    seatingFormat: 'Seating Format',
+    departureTime: 'Departure Time',
+    earlyMorning: 'Early Morning (12 AM - 6 AM)',
+    morning: 'Morning (6 AM - 12 PM)',
+    afternoon: 'Afternoon (12 PM - 6 PM)',
+    night: 'Night (6 PM - 12 AM)',
+    acOnly: 'AC Only',
+    nonAcOnly: 'Non-AC Only',
+    allBuses: 'All Services',
+    seatsLeft: 'seats available',
+    hurrySeats: 'Only {count} seats left!',
+    selectSeats: 'Select Seats',
+    hideSeats: 'Hide Seats',
+    fareBreakup: 'Fare Breakup',
+    baseFare: 'Base Fare',
+    gst: 'GST (5%)',
+    tollFee: 'Toll & Passenger Cess',
+    totalPayable: 'Total Amount',
+
+    // Seat Map
+    lowerDeck: 'Lower Deck',
+    upperDeck: 'Upper Deck',
+    frontCabin: 'Front / Driver Cabin',
+    rearDeck: 'Rear of Bus',
+    available: 'Available',
+    selected: 'Selected',
+    ladiesQuota: 'Ladies Quota',
+    seniorQuota: 'Senior Citizen',
+    booked: 'Booked',
+    selectedSeatsLabel: 'Selected Seats:',
+    maxSeatsWarning: 'You can select up to 6 seats per booking.',
+    ladiesSeatNotice: 'This seat is reserved for solo female travelers.',
+    proceedToPickup: 'Proceed to Boarding Point',
+
+    // Boarding & Dropping
+    selectBoarding: 'Select Boarding Point',
+    selectDropping: 'Select Dropping Point',
+    landmark: 'Landmark',
+    scheduledTime: 'Scheduled Time',
+    proceedToPassengers: 'Proceed to Passenger Details',
+
+    // Passenger Form
+    passengerDetailsTitle: 'Passenger Details',
+    passengerDetailsSubtitle: 'Please provide valid government ID names matching travel documents',
+    passengerNumber: 'Passenger',
+    fullName: 'Full Name',
+    enterName: 'As per Aadhaar / Voter ID',
+    age: 'Age',
+    gender: 'Gender',
+    male: 'Male',
+    female: 'Female',
+    other: 'Other',
+    seniorCitizenConcession: 'Apply Senior Citizen Concession (60+ yrs)',
+    contactDetailsTitle: 'Contact Information',
+    contactDetailsSubtitle: 'Your m-Ticket and live tracking updates will be dispatched here',
+    mobileNumber: 'Mobile Number (10 digits)',
+    emailAddress: 'Email Address',
+    whatsAppOptIn: 'Send m-Ticket & Live GPS tracking links via WhatsApp',
+    proceedToPayment: 'Proceed to Payment',
+
+    // Payment
+    paymentTitle: 'Complete Secure Payment',
+    seatLockWarning: 'Seats are locked for',
+    upiPayTitle: 'Instant UPI Payment (Recommended)',
+    scanQrCode: 'Scan QR Code using any UPI App (PhonePe, GPay, Paytm, BHIM)',
+    enterUpiId: 'Or enter your UPI ID (e.g. mobile@upi)',
+    verifyAndPay: 'Verify & Pay',
+    cardsNetbanking: 'Debit / Credit Card / NetBanking',
+    paySecurely: 'Pay ₹{amount} Securely',
+    paymentSuccess: 'Payment Successful! Generating your m-Ticket...',
+
+    // Ticket Confirmation
+    bookingConfirmed: 'Ticket Confirmed!',
+    pnrLabel: 'PNR Number',
+    serviceNoLabel: 'Service No',
+    journeyDate: 'Journey Date',
+    boardingAt: 'Boarding At',
+    droppingAt: 'Dropping At',
+    seatNumbers: 'Seat(s)',
+    downloadPdf: 'Download PDF m-Ticket',
+    printTicket: 'Print Ticket',
+    shareWhatsApp: 'Share on WhatsApp',
+    addToWallet: 'Add to Wallet',
+    trackThisBus: 'Track My Bus (Live GPS)',
+    conductorHelpline: 'Conductor / Depot Helpline:',
+
+    // Live Tracking
+    liveTrackTitle: 'APSRTC LiveTrack — Real-time Bus Telemetry',
+    liveTrackSubtitle: 'Enter PNR or Service Number to track bus GPS location in real time',
+    enterPnrOrService: 'Enter 10-digit PNR Number',
+    locateBus: 'Locate Bus',
+    currentStatus: 'Current Bus Telemetry',
+    busSpeed: 'Current Speed',
+    onTime: 'Running On Time',
+    delayed: 'Delayed by {mins} mins',
+    lastPinged: 'Last GPS Ping',
+    routeMilestones: 'Route Milestones & Checkpoints',
+
+    // Footer
+    footerAbout: 'Andhra Pradesh State Road Transport Corporation is committed to providing safe, dependable, and comfortable passenger transport across 14,000+ daily routes.',
+    safetyFirst: 'Safety & Security',
+    rtgsHelp: 'Real-time Citizen Grievance (RTGS): 1902',
+    awardsNotice: 'Winner of National Public Transport Excellence Awards for Digital Mobility Initiatives.',
+    copyright: '© 2026 Andhra Pradesh State Road Transport Corporation. All Rights Reserved.'
+  },
+  te: {
+    // Header
+    brandName: 'ఆంధ్రప్రదేశ్ రాష్ట్ర రోడ్డు రవాణా సంస్థ',
+    brandSub: 'ఆంధ్రప్రదేశ్ ప్రభుత్వ రంగ సంస్థ',
+    shortBrand: 'ఎపిఎస్ఆర్టీసి',
+    tagline: 'విశ్వసనీయత • భద్రత • సురక్షిత ప్రయాణం',
+    hotline24x7: '24/7 సహాయ కేంద్రం',
+    home: 'హోమ్',
+    trackBus: 'లైవ్ బస్సు ట్రాకింగ్',
+    ticketStatus: 'టికెట్ స్థితి',
+    cancelTicket: 'టికెట్ రద్దు',
+    logistics: 'కార్గో & లాజిస్టిక్స్',
+    grievance: 'ఫిర్యాదులు / సూచనలు',
+    agentLogin: 'ఏజెంట్ లాగిన్',
+    myBookings: 'నా బుకింగ్స్',
+
+    // Hero Search
+    heroTitle: 'ఆంధ్రప్రదేశ్‌ అంతటా సురక్షితమైన, సౌకర్యవంతమైన ప్రయాణం',
+    heroSubtitle: 'ఎలాంటి అదనపు ఛార్జీలు లేకుండా నేరుగా బస్సు టికెట్లు బుక్ చేసుకోండి.',
+    fromCity: 'బయలుదేరే ఊరు (From)',
+    toCity: 'చేరుకునే ఊరు (To)',
+    selectOrigin: 'ఊరు లేదా బస్ స్టేషన్ పేరు నమోదు చేయండి',
+    selectDestination: 'గమ్యస్థాన ఊరు పేరు నమోదు చేయండి',
+    departDate: 'ప్రయాణ తేదీ',
+    returnDate: 'తిరుగు ప్రయాణ తేదీ (ఐచ్ఛికం)',
+    roundTrip: 'రౌండ్ ట్రిప్ (10% రాయితీ)',
+    today: 'ఈ రోజు',
+    tomorrow: 'రేపు',
+    thisWeekend: 'శని/ఆదివారాలు',
+    checkAvailability: 'బస్సులు చూడండి',
+    swapRoute: 'దిశ మార్చండి',
+    popularHubs: 'ప్రధాన బస్ స్టేషన్లు',
+    localStops: 'స్థానిక బోర్డింగ్ పాయింట్లు',
+
+    // Popular Corridors
+    popularRoutesTitle: 'అత్యంత ప్రజాదరణ పొందిన మార్గాలు',
+    popularRoutesSubtitle: 'రోజువారీ నిరంతర అమరావతి, గరుడ మరియు సూపర్ లగ్జరీ సర్వీసులు',
+    startingFrom: 'ప్రారంభ ధర',
+    busesPerDay: 'రోజుకు బస్సులు',
+    duration: 'ప్రయాణ సమయం',
+    bookNow: 'ఇప్పుడే బుక్ చేయండి',
+
+    // Search Results
+    modifySearch: 'శోధన మార్చుకోండి',
+    foundBuses: 'సర్వీసులు అందుబాటులో ఉన్నాయి',
+    filterBy: 'సర్వీసులు ఫిల్టర్ చేయండి',
+    resetFilters: 'అన్నీ తొలగించు',
+    busCategory: 'బస్సు రకం',
+    seatingFormat: 'సీటింగ్ రకం',
+    departureTime: 'బయలుదేరే సమయం',
+    earlyMorning: 'తెల్లవారుజామున (12 AM - 6 AM)',
+    morning: 'ఉదయం (6 AM - 12 PM)',
+    afternoon: 'మధ్యాహ్నం (12 PM - 6 PM)',
+    night: 'రాత్రి (6 PM - 12 AM)',
+    acOnly: 'ఎసి మాత్రమే',
+    nonAcOnly: 'నాన్-ఎసి మాత్రమే',
+    allBuses: 'అన్ని సర్వీసులు',
+    seatsLeft: 'సీట్లు అందుబాటులో ఉన్నాయి',
+    hurrySeats: 'కేవలం {count} సీట్లు మాత్రమే మిగిలి ఉన్నాయి!',
+    selectSeats: 'సీటు ఎంచుకోండి',
+    hideSeats: 'సీట్లు దాచండి',
+    fareBreakup: 'ఛార్జీల వివరాలు',
+    baseFare: 'మూల ఛార్జీ',
+    gst: 'జి.ఎస్.టి (5%)',
+    tollFee: 'టోల్ & సెస్',
+    totalPayable: 'మొత్తం చెల్లించవలసినది',
+
+    // Seat Map
+    lowerDeck: 'క్రింది డెక్ (Lower Deck)',
+    upperDeck: 'పై డెక్ (Upper Deck)',
+    frontCabin: 'ముందు భాగం / డ్రైవర్ క్యాబిన్',
+    rearDeck: 'వెనుక భాగం',
+    available: 'అందుబాటులో ఉంది',
+    selected: 'ఎంచుకున్నారు',
+    ladiesQuota: 'మహిళల కోటా',
+    seniorQuota: 'సీనియర్ సిటిజెన్',
+    booked: 'బుక్ అయ్యింది',
+    selectedSeatsLabel: 'ఎంచుకున్న సీట్లు:',
+    maxSeatsWarning: 'ఒక బుకింగ్‌లో గరిష్టంగా 6 సీట్లు మాత్రమే ఎంచుకోవచ్చు.',
+    ladiesSeatNotice: 'ఈ సీటు ఒంటరి మహిళా ప్రయాణికుల కోసం కేటాయించబడింది.',
+    proceedToPickup: 'బోర్డింగ్ పాయింట్ ఎంచుకోండి',
+
+    // Boarding & Dropping
+    selectBoarding: 'ఎక్కే ప్రదేశం (Boarding Point)',
+    selectDropping: 'దిగే ప్రదేశం (Dropping Point)',
+    landmark: 'గుర్తు / ల్యాండ్‌మార్క్',
+    scheduledTime: 'నిర్దేశిత సమయం',
+    proceedToPassengers: 'ప్రయాణికుల వివరాలు నమోదు చేయండి',
+
+    // Passenger Form
+    passengerDetailsTitle: 'ప్రయాణికుల వివరాలు',
+    passengerDetailsSubtitle: 'దయచేసి ఆధార్ కార్డులో ఉన్న విధంగా పేర్లను నమోదు చేయండి',
+    passengerNumber: 'ప్రయాణికుడు',
+    fullName: 'పూర్తి పేరు',
+    enterName: 'ఆధార్ ప్రకారం పేరు',
+    age: 'వయస్సు',
+    gender: 'లింగం',
+    male: 'పురుషుడు',
+    female: 'స్త్రీ',
+    other: 'ఇతర',
+    seniorCitizenConcession: 'సీనియర్ సిటిజన్ రాయితీ వర్తింపజేయి (60+ ఏళ్ళు)',
+    contactDetailsTitle: 'సంప్రదింపుల వివరాలు',
+    contactDetailsSubtitle: 'మీ డిజిటల్ టికెట్ మరియు లైవ్ బస్సు సమాచారం ఇక్కడికి పంపబడుతుంది',
+    mobileNumber: 'మొబైల్ నంబర్ (10 అంకెలు)',
+    emailAddress: 'ఈమెయిల్ చిరునామా',
+    whatsAppOptIn: 'వాట్సాప్ ద్వారా m-Ticket మరియు లైవ్ లొకేషన్ వివరాలు పంపండి',
+    proceedToPayment: 'చెల్లింపునకు వెళ్లండి',
+
+    // Payment
+    paymentTitle: 'సురక్షిత ఆన్‌లైన్ చెల్లింపు',
+    seatLockWarning: 'సీట్లు లాక్ చేయబడిన సమయం',
+    upiPayTitle: 'తక్షణ యుపిఐ చెల్లింపు (UPI)',
+    scanQrCode: 'PhonePe, GPay, Paytm యాప్ ద్వారా QR కోడ్ స్కాన్ చేయండి',
+    enterUpiId: 'లేదా మీ UPI ఐడీ నమోదు చేయండి',
+    verifyAndPay: 'ధృవీకరించి చెల్లించండి',
+    cardsNetbanking: 'డెబిట్ / క్రెడిట్ కార్డ్ / నెట్‌బ్యాంకింగ్',
+    paySecurely: 'సురక్షితంగా ₹{amount} చెల్లించండి',
+    paymentSuccess: 'చెల్లింపు విజయవంతమైంది! మీ m-Ticket రూపొందించబడుతోంది...',
+
+    // Ticket Confirmation
+    bookingConfirmed: 'టికెట్ విజయవంతంగా బుక్ అయ్యింది!',
+    pnrLabel: 'పి.ఎన్.ఆర్ నంబర్ (PNR)',
+    serviceNoLabel: 'సర్వీస్ నంబర్',
+    journeyDate: 'ప్రయాణ తేదీ',
+    boardingAt: 'ఎక్కే ప్రదేశం',
+    droppingAt: 'దిగే ప్రదేశం',
+    seatNumbers: 'సీటు నంబర్లు',
+    downloadPdf: 'పిడిఎఫ్ టికెట్ డౌన్‌లోడ్',
+    printTicket: 'ప్రింట్ తీయండి',
+    shareWhatsApp: 'వాట్సాప్‌లో షేర్ చేయండి',
+    addToWallet: 'వాలెట్‌కు జోడించండి',
+    trackThisBus: 'బస్సును లైవ్ ట్రాక్ చేయండి',
+    conductorHelpline: 'కండక్టర్ / డిపో హెల్ప్‌లైన్:',
+
+    // Live Tracking
+    liveTrackTitle: 'ఎపిఎస్ఆర్టీసి లైవ్‌ట్రాక్ — బస్సు ప్రస్తుత స్థానం',
+    liveTrackSubtitle: 'పి.ఎన్.ఆర్ లేదా సర్వీస్ నంబర్ నమోదు చేసి బస్సు ఎక్కడుందో లైవ్‌లో చూడండి',
+    enterPnrOrService: '10 అంకెల PNR నంబర్ నమోదు చేయండి',
+    locateBus: 'బస్సును గుర్తించండి',
+    currentStatus: 'బస్సు ప్రస్తుత సమాచారం',
+    busSpeed: 'ప్రస్తుత వేగం',
+    onTime: 'సమయానికి నడుస్తోంది',
+    delayed: '{mins} నిమిషాలు ఆలస్యంగా ఉంది',
+    lastPinged: 'చివరి జీపీఎస్ సమయం',
+    routeMilestones: 'ప్రయాణ మార్గ వివరాలు',
+
+    // Footer
+    footerAbout: 'ఆంధ్రప్రదేశ్ రాష్ట్ర రోడ్డు రవాణా సంస్థ ప్రతిరోజూ 14,000+ సర్వీసుల ద్వారా ప్రజలకు భద్రమైన, సమయపాలనతో కూడిన రవాణా సేవలను అందిస్తోంది.',
+    safetyFirst: 'భద్రత & ప్రయాణీకుల సంక్షేమం',
+    rtgsHelp: 'ప్రజా ఫిర్యాదుల విభాగం (RTGS): 1902',
+    awardsNotice: 'డిజిటల్ ఇనిషియేటివ్స్ కేటగిరీలో జాతీయ ప్రజా రవాణా ఎక్సలెన్స్ అవార్డు గ్రహీత.',
+    copyright: '© 2026 ఆంధ్రప్రదేశ్ రాష్ట్ర రోడ్డు రవాణా సంస్థ. సర్వ హక్కులు ప్రత్యేకించబడినవి.'
+  }
+};
+
+export function useI18n(lang: Language) {
+  const t = translations[lang];
+  return {
+    t,
+    lang,
+    interpolate: (template: string, vars: Record<string, string | number>) => {
+      let result = template;
+      for (const [key, val] of Object.entries(vars)) {
+        result = result.replace(new RegExp(`\\{${key}\\}`, 'g'), String(val));
+      }
+      return result;
+    }
+  };
+}
