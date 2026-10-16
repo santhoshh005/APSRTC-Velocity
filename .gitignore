@@ -28,3 +28,13 @@ dist-ssr
 .env
 .env.production
 .env.development
+
+# Reports, Academic Documentation & Generator Assets (kept locally)
+*.docx
+*.pdf
+generate_*.py
+prepare_*.py
+report_assets_processed/
+report_diagrams/
+report_images/
+report_images_tight/
